@@ -1,0 +1,733 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="author" content="Untree.co">
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<meta name="description" content="" />
+	<meta name="keywords" content="bootstrap, bootstrap4" />
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Source+Serif+Pro:wght@400;700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="fonts/icomoon/style.css">
+	<link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+	<link rel="stylesheet" href="css/daterangepicker.css">
+	<link rel="stylesheet" href="css/aos.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<title>NOTARY</title>
+</head>
+
+<body>
+<div class="header1" id="myHeader">
+  <div >
+	<div >
+		<div class="row">
+			<div class="col-md-12">
+					<div class="container header-container">
+
+					<div class="header-right clearfix">
+			<div class="skip_to_main">
+							<a href="#skip_to_main" title="Skip to main content">
+					Skip to main content				</a>
+			</div>		
+			<ul >
+				<li class="fontS noback"><a href="javascript:void(0);" title="Decrease font size" onclick="set_font_size('decrease')">A<sup>-</sup></a></li>
+				<li class="fontS noback noPadding-left">
+					<a href="javascript:void(0);" title="Reset font size" onclick="set_font_size('')">A<sup>&nbsp;</sup></a></li>
+				<li class="fontS noback noPadding-left">
+					<a href="javascript:void(0);" title="Increase font size" onclick="set_font_size('increase')">A<sup>+</sup></a></li>
+				<li class="blackA noback noPadding-right">
+					<a href="javascript:void(0);" class="dark" onclick="chooseStyle('change', 60);" title="Dark">A</a> </li>
+				<li class="greyA noback"><a href="javascript:void(0);" class="light" onclick="chooseStyle('none', 60);" title="Light">A</a></li>
+			</ul>
+			
+						
+			<!-- <div >
+				<ul class="clearfix">
+					<li><a href="https://twitter.com/pmoindia" target="_blank" title="PMO twitter" onclick="return confirm('This is external link, Are you sure you want to continue?');"><img src="https://www.pmindia.gov.in/wp-content/themes/pmindia2015/images/twitter-24.png" alt="PMO twitter"></a></li>
+					
+					<li><a href="https://www.facebook.com/PMOIndia" target="_blank" title="PMO facebook" onclick="return confirm('This is external link, Are you sure you want to continue?');"><img src="https://www.pmindia.gov.in/wp-content/themes/pmindia2015/images/facebook-24.png" alt="PMO facebook"></a></li>
+					
+					<li><a href="https://www.youtube.com/pmoindia" target="_blank" title="PMO Youtube" onclick="return confirm('This is external link, Are you sure you want to continue?');"><img src="https://www.pmindia.gov.in/wp-content/themes/pmindia2015/images/youtube-24.png" alt="PMO Youtube"></a></li>
+
+					<li><a href="http://narendramodi.in" target="_blank" title="PMO narendramodi" onclick="return confirm('This is external link, Are you sure you want to continue?');"><img src="https://www.pmindia.gov.in/wp-content/themes/pmindia2015/images/nm-24.png" alt="PMO narendramodi"></a></li>
+				</ul>
+			</div> -->
+			
+			<ul >
+								
+							</ul>
+			
+			<div class="search-area">
+				<script>
+				function submit_search_form()
+				{
+					document.getElementById("searchForm").submit();
+				}
+				</script>
+				<form id="searchForm" action="https://www.pmindia.gov.in/en/" method="get"> <!-- id="search_form"-->
+				<label class="is-vishidden" for="search">Search</label>
+					<input type="text" title="Search" class="inp-search" name="s" id="search" aria-label="Search" placeholder="Search">
+					
+					<a class="bttn-search" href="javascript:void(0);" onclick="javascript:submit_search_form();" title="Search">
+						<i class="icon-search"><em style="display:none;">Search</em></i></a>
+				</form>
+			</div>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <div >
+                <label><a href="https://www.pmindia.gov.in/en/pm-india-language-banner/" style="color: #fff;font-weight: 900;letter-spacing: 1px;" target="_blank">Language</a></label>
+                <div id="polylang-2" class="widget widget_polylang"><label class="screen-reader-text" for="lang_choice_polylang-2">Choose a language</label><select name="lang_choice" id="lang_choice_polylang-2" class="select-languege"><option value="en" selected="selected">English</option><option value="hi">Hindi</option><option value="asm">Assamese</option><option value="bn">Bengali</option><option value="gu">Gujarati</option><option value="kn">Kannada</option><option value="ml">Malayalam</option><option value="mni">Manipuri</option><option value="mr">Marathi</option><option value="ory">Odia</option><option value="pa">Punjabi</option><option value="ta">Tamil</option><option value="te">Telugu</option><option value="ur">Urdu</option></select>
+				<script type="text/javascript">
+					//<![CDATA[
+					var urls_polylang2 = {"ur":"http:\/\/www.pmindia.gov.in\/ur\/","mni":"http:\/\/www.pmindia.gov.in\/mni\/","ta":"http:\/\/www.pmindia.gov.in\/ta\/","mr":"http:\/\/www.pmindia.gov.in\/mr\/","bn":"http:\/\/www.pmindia.gov.in\/bn\/","ml":"http:\/\/www.pmindia.gov.in\/ml\/","gu":"http:\/\/www.pmindia.gov.in\/gu\/","te":"http:\/\/www.pmindia.gov.in\/te\/","kn":"http:\/\/www.pmindia.gov.in\/kn\/","ory":"http:\/\/www.pmindia.gov.in\/ory\/","en":"http:\/\/www.pmindia.gov.in\/en\/","pa":"http:\/\/www.pmindia.gov.in\/pa\/","hi":"http:\/\/www.pmindia.gov.in\/hi\/","asm":"http:\/\/www.pmindia.gov.in\/asm\/"};
+					var path = window.location.pathname;
+					var pathname = path.split("/");
+					document.getElementById( "lang_choice_polylang-2" ).onchange = function() {
+						let text = "Are your sure to change language";
+							if (confirm(text) == true) {
+								setCookie("pll_language", this.value);
+								location.href = urls_polylang2[this.value];
+							} else {
+								
+								document.getElementById( "lang_choice_polylang-2" ).value = pathname[1];
+								event.preventDefault()
+								return false;
+							}
+					}
+					function setCookie(cname, cvalue) {
+						var d = new Date();
+						d.setTime(d.getTime() + 365*24*60*60*1000);
+						var expires = "expires="+ d.toUTCString();
+						document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+					}
+					//]]>
+				</script></div>            </div>
+        </div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+	<div class="site-mobile-menu site-navbar-target">
+		<div class="site-mobile-menu-header">
+			<div class="site-mobile-menu-close">
+				<span class="icofont-close js-menu-toggle"></span>
+			</div>
+		</div>
+		<div class="site-mobile-menu-body"></div>
+	</div>
+
+	<nav class="site-nav" id="nav1">
+		<div class="container">
+			<div class="site-navigation">
+				<a href="index.html" class="logo m-0">NOAP </a>
+
+				<ul class="js-clone-nav d-none d-lg-inline-block text-left site-menu float-right">
+					<li class="active"><a href="index.html">Home</a></li>
+					<li class="has-children">
+						<a href="#">Dropdown</a>
+						<ul class="dropdown">
+							<li><a href="elements.html">Elements</a></li>
+							<li><a href="#">Menu One</a></li>
+							<li class="has-children">
+								<a href="#">Menu Two</a>
+								<ul class="dropdown">
+									<li><a href="#">Sub Menu One</a></li>
+									<li><a href="#">Sub Menu Two</a></li>
+									<li><a href="#">Sub Menu Three</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Menu Three</a></li>
+						</ul>
+					</li>
+					<li><a href="services.html">Services</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="contact.html">Contact Us</a></li>
+				</ul>
+
+				<a href="#" class="burger ml-auto float-right site-menu-toggle js-menu-toggle d-inline-block d-lg-none light" data-toggle="collapse" data-target="#main-navbar">
+					<span></span>
+				</a>
+
+			</div>
+		</div>
+	</nav>
+
+
+	<div class="hero">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-lg-7">
+					<div class="intro-wrap">
+
+						<div class="row">
+							<div class="col-12">
+								<form class="form">
+									<div class="row mb-2">
+										<div class="col-sm-12 col-md-6 mb-3 mb-lg-0 col-lg-12">
+											<h1 class="mb-5" style="color: black;"><span class="d-block">Notary Online </span> Application <span class="typed-words"></span></h1>
+
+											<!-- <select name="" id="" class="form-control custom-select">
+												<option value="">Destination</option>
+												<option value="">Peru</option>
+												<option value="">Japan</option>
+												<option value="">Thailand</option>
+												<option value="">Brazil</option>
+												<option value="">United States</option>
+												<option value="">Israel</option>
+												<option value="">China</option>
+												<option value="">Russia</option>
+											</select> -->
+										</div>
+										<!-- <div class="col-sm-12 col-md-6 mb-3 mb-lg-0 col-lg-5">
+											<input type="text" class="form-control" name="daterange">
+										</div>
+										<div class="col-sm-12 col-md-6 mb-3 mb-lg-0 col-lg-3">
+											<input type="text" class="form-control" placeholder="# of People">
+										</div> -->
+
+									</div>    
+									<!--<div class="row align-items-center">
+										<div class="col-sm-12 col-md-6 mb-3 mb-lg-0 col-lg-4">
+											<input type="submit" class="btn btn-primary btn-block" value="More">
+										</div>
+										<div class="col-lg-8">
+											<label class="control control--checkbox mt-3">
+												<span class="caption">Save this search</span>
+												<input type="checkbox" checked="checked" />
+												<div class="control__indicator"></div>
+											</label>
+										</div> 
+									</div>-->
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-5">
+					<div class="slides">
+						<img src="images/law1.png" alt="Image" class="img-fluid active">
+						<img src="images/law2.png" alt="Image" class="img-fluid">
+						<img src="images/law3.png" alt="Image" class="img-fluid">
+						<img src="images/law4.png" alt="Image" class="img-fluid">
+						<img src="images/law5.png" alt="Image" class="img-fluid">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="untree_co-section">
+		<div class="container">
+			<div class="row mb-5 justify-content-center">
+				<div class="col-lg-6 text-center">
+					<h2 class="section-title text-center mb-3">Welcome to NOAP</h2>
+					<!-- <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p> -->
+				</div>
+			</div>
+			<div class="row align-items-stretch">
+				<div class="col-lg-4 order-lg-1">
+					<div class="h-100"><div class="frame h-100"><div class="feature-img-bg h-100" style="background-image: url('images/no2.png');"></div></div></div>
+				</div>
+
+				<div class="col-6 col-sm-6 col-lg-4 feature-1-wrap d-md-flex flex-md-column order-lg-1" >
+
+					<div class="feature-1 d-md-flex">
+						<div class="align-self-center">
+							<span class="flaticon-house display-4 text-primary"></span>
+							<h3>New User Registration</h3>
+							<p class="mb-0"></p>
+						</div>
+					</div>
+
+					<div class="feature-1 ">
+						<div class="align-self-center">
+							<span class="flaticon-house display-4 text-primary"></span>
+							<h3>Applicant Login</h3>
+							<p class="mb-0"> </p>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="col-6 col-sm-6 col-lg-4 feature-1-wrap d-md-flex flex-md-column order-lg-3" >
+
+					<div class="feature-1 d-md-flex">
+						<div class="align-self-center">
+							<span class="flaticon-mail display-4 text-primary"></span>
+							<h3>Notary Login</h3>
+							<p class="mb-0"> </p>
+						</div>
+					</div>
+
+					<div class="feature-1 d-md-flex">
+						<div class="align-self-center">
+							<span class="flaticon-phone-call display-4 text-primary"></span>
+							<h3>Competent Authority Login</h3>
+							<p class="mb-0"> </p>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<div class="untree_co-section count-numbers py-5" style="background-image: url(https://legalaffairs.gov.in/itat-recruitment/images/bg2.png);background-position: middle;  ">
+		<div class="container">
+			<div class="row">
+				<div class="col-6 col-sm-6 col-md-6 col-lg-3">
+					<div class="counter-wrap">
+						<div class="counter">
+							<span class="" data-number="9313">0</span>
+						</div>
+						<span class="caption">No. of Notaries</span>
+					</div>
+				</div>
+				<div class="col-6 col-sm-6 col-md-6 col-lg-3">
+					<div class="counter-wrap">
+						<div class="counter">
+							<span class="" data-number="8492">0</span>
+						</div>
+						<span class="caption">No. of Notaries</span>
+					</div>
+				</div>
+				<div class="col-6 col-sm-6 col-md-6 col-lg-3">
+					<div class="counter-wrap">
+						<div class="counter">
+							<span class="" data-number="100">0</span>
+						</div>
+						<span class="caption">No. of Notaries</span>
+					</div>
+				</div>
+				<div class="col-6 col-sm-6 col-md-6 col-lg-3">
+					<div class="counter-wrap">
+						<div class="counter">
+							<span class="" data-number="120">0</span>
+						</div>
+						<span class="caption">No. of Notaries</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<div class="untree_co-section">
+		<div class="container">
+			<div class="row text-center justify-content-center mb-5">
+				<div class="col-lg-7"><h2 class="section-title text-center">Important Links</h2></div>
+			</div>
+
+			<div class="owl-carousel owl-3-slider">
+
+				<div class="item">
+					<a class="media-thumb" href="images/hero-slider-1.jpg" data-fancybox="gallery">
+						<div class="media-text">
+							<h3>Ministry of Law & Justice</h3>
+							<!-- <span class="location">Italy</span> -->
+						</div>
+						<img src="images/law1.png" alt="Image" class="img-fluid">
+					</a> 
+				</div>
+
+				<div class="item">
+					<a class="media-thumb" href="images/hero-slider-2.jpg" data-fancybox="gallery">
+						<div class="media-text">
+							<h3>Legislative Department</h3>
+							<!-- <span class="location">Greece</span> -->
+						</div>
+						<img src="images/law1.png" alt="Image" class="img-fluid">
+					</a> 
+				</div>
+
+				<div class="item">
+					<a class="media-thumb" href="images/hero-slider-3.jpg" data-fancybox="gallery">
+						<div class="media-text">
+							<h3>Department of Legal Affairs</h3>
+							<!-- <span class="location">Malaysia</span> -->
+						</div>
+						<img src="images/law1.png" alt="Image" class="img-fluid">
+					</a> 
+				</div>
+
+
+				<div class="item">
+					<a class="media-thumb" href="images/hero-slider-4.jpg" data-fancybox="gallery">
+						<div class="media-text">
+							<h3>PM India</h3>
+							<!-- <span class="location">Italy</span> -->
+						</div>
+						<img src="images/law1.png" alt="Image" class="img-fluid">
+					</a> 
+				</div>
+
+				<div class="item">
+					<a class="media-thumb" href="images/hero-slider-5.jpg" data-fancybox="gallery">
+						<div class="media-text">
+							<h3>Digital India</h3>
+							<!-- <span class="location">United States</span> -->
+						</div>
+						<img src="images/law1.png" alt="Image" class="img-fluid">
+					</a> 
+				</div>
+
+				<div class="item">
+					<a class="media-thumb" href="images/hero-slider-1.jpg" data-fancybox="gallery">
+						<div class="media-text">
+							<h3>My Gov</h3>
+							<!-- <span class="location">Switzerland</span> -->
+						</div>
+						<img src="images/law1.png" alt="Image" class="img-fluid">
+					</a> 
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+
+
+	<!-- <div class="untree_co-section testimonial-section mt-5">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-7 text-center">
+					<h2 class="section-title text-center mb-5">Testimonials</h2>
+
+					<div class="owl-single owl-carousel no-nav">
+						<div class="testimonial mx-auto">
+							<figure class="img-wrap">
+								<img src="images/person_2.jpg" alt="Image" class="img-fluid">
+							</figure>
+							<h3 class="name">Adam Aderson</h3>
+							<blockquote>
+								<p>&ldquo;There live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.&rdquo;</p>
+							</blockquote>
+						</div>
+
+						<div class="testimonial mx-auto">
+							<figure class="img-wrap">
+								<img src="images/person_3.jpg" alt="Image" class="img-fluid">
+							</figure>
+							<h3 class="name">Lukas Devlin</h3>
+							<blockquote>
+								<p>&ldquo;There live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.&rdquo;</p>
+							</blockquote>
+						</div>
+
+						<div class="testimonial mx-auto">
+							<figure class="img-wrap">
+								<img src="images/person_4.jpg" alt="Image" class="img-fluid">
+							</figure>
+							<h3 class="name">Kayla Bryant</h3>
+							<blockquote>
+								<p>&ldquo;There live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.&rdquo;</p>
+							</blockquote>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div> -->
+
+<hr>
+	<div class="untree_co-section">
+		<div class="container">
+			<div class="row justify-content-center text-center mb-5">
+				<div class="col-lg-6">
+					<h2 class="section-title text-center mb-3">Downloads</h2>
+					<p>Files and other media</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-6 col-sm-6 col-md-6 col-lg-3 mb-4 mb-lg-0">
+					<div class="media-1">
+						<a href="#" class="d-block mb-3"><img src="images/law1.png" alt="Image" class="img-fluid"></a>
+						<span class="d-flex align-items-center loc mb-2">
+							<span class="icon-book mr-3"></span>
+							<!-- <span>VIEW</span> -->
+						</span>
+						<div class="d-flex align-items-center">
+							<div>
+								<h3><a href="#">The Notaries Rules, 1956</a></h3>
+								<div class="price ml-auto">
+									<span>(As amended)</span>
+								</div>
+							</div>
+							
+						</div>
+						
+					</div>
+				</div>
+				<div class="col-6 col-sm-6 col-md-6 col-lg-3 mb-4 mb-lg-0">
+					<div class="media-1">
+						<a href="#" class="d-block mb-3"><img src="images/law1.png" alt="Image" class="img-fluid"></a>
+						<span class="d-flex align-items-center loc mb-2">
+							<span class="icon-book mr-3"></span>
+							<!-- <span>United States</span> -->
+						</span>
+						<div class="d-flex align-items-center">
+							<div>
+								<h3><a href="#">The Notaries Act, 1952</a></h3>
+								<div class="price ml-auto">
+									<span>(As amended)</span>
+								</div>
+							</div>
+							
+						</div>
+						
+					</div>
+				</div>
+				<div class="col-6 col-sm-6 col-md-6 col-lg-3 mb-4 mb-lg-0">
+					<div class="media-1">
+						<a href="#" class="d-block mb-3"><img src="images/law1.png" alt="Image" class="img-fluid"></a>
+						<span class="d-flex align-items-center loc mb-2">
+							<span class="icon-book mr-3"></span>
+							<!-- <span>Malaysia</span> -->
+						</span>
+						<div class="d-flex align-items-center">
+							<div>
+								<h3><a href="#">Online Payment Manual</a></h3>
+								<div class="price ml-auto">
+									<span>VIEW</span>
+								</div>
+							</div>
+							
+						</div>
+						
+					</div>
+				</div>
+				<div class="col-6 col-sm-6 col-md-6 col-lg-3 mb-4 mb-lg-0">
+					<div class="media-1">
+						<a href="#" class="d-block mb-3"><img src="images/law1.png" alt="Image" class="img-fluid"></a>
+
+						<span class="d-flex align-items-center loc mb-2">
+							<span class="icon-book mr-3"></span>
+							<!-- <span>Switzerland</span> -->
+						</span>
+
+						<div class="d-flex align-items-center">
+							<div>
+								<h3><a href="#">Statistics</a></h3>
+								<div class="price ml-auto">
+									<span>VIEW</span>
+								</div>
+							</div>
+							
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- <div class="untree_co-section">
+		<div class="container">
+			<div class="row justify-content-between align-items-center">
+				
+				<div class="col-lg-6">
+					<figure class="img-play-video">
+						<a id="play-video" class="video-play-button" href="https://www.youtube.com/watch?v=mwtbEGNABWU" data-fancybox>
+							<span></span>
+						</a>
+						<img src="images/hero-slider-2.jpg" alt="Image" class="img-fluid rounded-20">
+					</figure>
+				</div>
+
+				<div class="col-lg-5">
+					<h2 class="section-title text-left mb-4">Take a look at Tour Video</h2>
+					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+
+					<p class="mb-4">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+
+					<ul class="list-unstyled two-col clearfix">
+						<li>Outdoor recreation activities</li>
+						<li>Airlines</li>
+						<li>Car Rentals</li>
+						<li>Cruise Lines</li>
+						<li>Hotels</li>
+						<li>Railways</li>
+						<li>Travel Insurance</li>
+						<li>Package Tours</li>
+						<li>Insurance</li>
+						<li>Guide Books</li>
+					</ul>
+
+					<p><a href="#" class="btn btn-primary">Get Started</a></p>
+
+					
+				</div>
+			</div>
+		</div>
+	</div> -->
+
+	
+	
+	<div class="py-5 cta-section">
+		<div class="container">
+			<div class="row text-center">
+				<div class="col-md-12">
+					<h2 class="mb-2 text-white">Email your Queries</h2>
+					<p class="mb-4 lead text-white text-white-opacity">notary@gmail.com</p>
+					<p class="mb-0"><a href="#" class="btn btn-outline-white text-white btn-md font-weight-bold">Submit</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="site-footer">
+		<div class="inner first">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-lg-4">
+						<div class="widget">
+							<h3 class="heading">NOAP</h3>
+							<p>Notary Online Application Portal</p>
+						</div>
+						<div class="widget">
+							<ul class="list-unstyled social">
+								<li><a href="#"><span class="icon-twitter"></span></a></li>
+								<li><a href="#"><span class="icon-instagram"></span></a></li>
+								<li><a href="#"><span class="icon-facebook"></span></a></li>
+								<li><a href="#"><span class="icon-linkedin"></span></a></li>
+								
+								<li><a href="#"><span class="icon-google"></span></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-2 pl-lg-5">
+						<div class="widget">
+							<h3 class="heading">Pages</h3>
+							<ul class="links list-unstyled">
+								<li><a href="#">Blog</a></li>
+								<li><a href="#">About</a></li>
+								<li><a href="#">Contact</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-2">
+						<div class="widget">
+							<h3 class="heading">Resources</h3>
+							<ul class="links list-unstyled">
+								<li><a href="#">Blog</a></li>
+								<li><a href="#">About</a></li>
+								<li><a href="#">Contact</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-4">
+						<div class="widget">
+							<h3 class="heading">Contact</h3>
+							<ul class="list-unstyled quick-info links">
+								<li class="email"><a href="#">mail@notary.gov.in</a></li>
+								<li class="phone"><a href="#">+91 999 999 9999</a></li>
+								<li class="address"><a href="#">Janpath Bhawan</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+		<div class="inner dark">
+			<div class="container">
+				<div class="row text-center">
+					<div class="col-md-8 mb-3 mb-md-0 mx-auto">
+						<p>Copyright &copy;<script>document.write(new Date().getFullYear());</script>. All Rights Reserved. &mdash; Designed & Developed by <a href="https://nic.in" class="link-highlight">NIC</a>
+						</p>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="overlayer"></div>
+	<div class="loader">
+		<div class="spinner-border" role="status">
+			<span class="sr-only">Loading...</span>
+		</div>
+	</div>
+
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.animateNumber.min.js"></script>
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/jquery.fancybox.min.js"></script>
+	<script src="js/aos.js"></script>
+	<script src="js/moment.min.js"></script>
+	<script src="js/daterangepicker.js"></script>
+
+	<script src="js/typed.js"></script>
+	<script>
+		$(function() {
+			var slides = $('.slides'),
+			images = slides.find('img');
+
+			images.each(function(i) {
+				$(this).attr('data-id', i + 1);
+			})
+
+			var typed = new Typed('.typed-words', {
+				strings: ["Portal."," for."," Notaries.", " Advocates.", " Lawyers."],
+				typeSpeed: 80,
+				backSpeed: 80,
+				backDelay: 3000,
+				startDelay: 1000,
+				loop: true,
+				showCursor: true,
+				preStringTyped: (arrayPos, self) => {
+					arrayPos++;
+					console.log(arrayPos);
+					$('.slides img').removeClass('active');
+					$('.slides img[data-id="'+arrayPos+'"]').addClass('active');
+				}
+
+			});
+		})
+	</script>
+
+	<script>
+window.onscroll = function() {myFunction()};
+
+// var header = document.getElementById("myHeader");
+var header = document.getElementById("nav1");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+    // nav.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+    // nav.classList.remove("sticky");
+  }
+}
+</script>
+
+	<script src="js/custom.js"></script>
+
+</body>
+
+</html>
